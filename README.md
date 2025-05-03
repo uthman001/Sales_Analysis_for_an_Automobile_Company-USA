@@ -80,6 +80,20 @@ Customer_Count.sort_values("Profit", ascending = False)
 ```Python
 Customer_Count.sort_values("Profit", ascending = False).head(10)
 ```
+![result](https://github.com/user-attachments/assets/6e8d3d61-da62-4b2d-aa2a-3702f3615fc1)
+
+#### DATA VISUALIZATION
+```Python
+Customer_Count.sort_values("Profit", ascending = False).head(10).plot(kind = "bar", title = "Top 10 Most-Profitable Customers in the United State")
+
+#label
+plt.xlabel("CustomerName")
+plt.ylabel("Profit") 
+
+plt.show()
+```
+![Screenshot vissualization](https://github.com/user-attachments/assets/5c817a7a-421a-4f21-8f03-f54627652641)
+
 
 
 
