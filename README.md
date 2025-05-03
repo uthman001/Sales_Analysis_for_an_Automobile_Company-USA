@@ -60,6 +60,29 @@ Customer_Country = bikes_df[(Customer_C)]
 
 Customer_Country
 ```
+![Screenshot fill](https://github.com/user-attachments/assets/b91de9c0-8295-4f79-ba15-b233be18fb4d)
+
+#### DATA AGGREGATION
+```Python
+Customer_Count = Customer_Country.pivot_table(values = "Profit",index = "CustomerName", aggfunc = np.sum)
+
+Customer_Count
+```
+![Screenshot aggregation](https://github.com/user-attachments/assets/6850ebaa-03fe-4a5b-ae34-79ddff6c74d2)
+
+#### DATA SORTING
+```Python
+Customer_Count.sort_values("Profit", ascending = False)
+```
+![Screenshot aggregation](https://github.com/user-attachments/assets/4e4fd4b1-9f16-40c7-b246-421c259499cd)
+
+#### RESULT
+```Python
+Customer_Count.sort_values("Profit", ascending = False).head(10)
+```
+
+
+
 
 
 
